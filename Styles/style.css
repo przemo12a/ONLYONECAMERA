@@ -1,0 +1,24 @@
+body{
+
+}
+
+
+.kont1{
+  background-color: blue !important;
+}
+
+
+img#ooc{
+  width: 100px;
+  height: 90px;
+  margin: 10px;
+  float: left;
+}
+
+li{
+  list-style-type: none;
+  float: left;
+  margin: 20px 30px 0px 30px;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 50px;
+}
