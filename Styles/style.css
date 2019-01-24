@@ -1,12 +1,14 @@
 body{
+  margin: 0;
+  padding: 0;
 
 }
 
-
 .kont1{
-  background-image: "Images/cameraman.png";
+  background-image: url("../Images/cameraman.png");
   overflow: hidden;
   display: block;
+  height: 1080px;
 }
 
 
@@ -27,4 +29,8 @@ li{
   margin: 20px 30px 0px 30px;
   font-family: 'Major Mono Display', monospace;
   font-size: 50px;
+}
+
+a:hover{
+  decoration: none;
 }
