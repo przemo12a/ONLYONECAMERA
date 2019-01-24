@@ -4,7 +4,9 @@ body{
 
 
 .kont1{
-  background-color: blue !important;
+  background-image: "Images/cameraman.png";
+  overflow: hidden;
+  display: block;
 }
 
 
@@ -12,7 +14,11 @@ img#ooc{
   width: 100px;
   height: 90px;
   margin: 10px;
-  float: left;
+  display:inline-block
+}
+
+ul{
+  display:inline-block
 }
 
 li{
