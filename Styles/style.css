@@ -28,7 +28,7 @@ li{
   list-style-type: none;
   float: left;
   margin: 0px 30px 0px 30px;
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 45px;
 
   }
@@ -55,7 +55,7 @@ a:active{
 
 .tekst1{
   position: absolute;
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 45px;
   color: white;
   top: 325px;
