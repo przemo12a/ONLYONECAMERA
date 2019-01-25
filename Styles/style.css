@@ -27,9 +27,11 @@ ul{
 li{
   list-style-type: none;
   float: left;
-  margin: 0px 30px 0px 30px;
+  margin: 0px 30px 0px 25px;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 40px;
+  display: block;
+  padding: 10px;
 
   }
 
@@ -54,7 +56,7 @@ a:active{
 }
 
 .tekst1{
-  position: absolute;
+  position: fixed;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 50px;
   color: white;
@@ -64,7 +66,7 @@ a:active{
 }
 
 .button {
-  background-color: #856084;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,77,1) 35%, rgba(183,0,255,1) 100%);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -72,15 +74,21 @@ a:active{
   text-decoration: none;
   overflow: hidden;
   display: block;
-  font-size: 25px;
+  font-size: 35px;
   margin: 4px 2px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   position: absolute;
-  top: 200 px;
+  top: 575px;
   font-family: 'Roboto Condensed', sans-serif;
-  width: 200px;
+  width: 400px;
+  position: fixed;
+  left: 860px;
+}
+
+.button {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .button:hover {
