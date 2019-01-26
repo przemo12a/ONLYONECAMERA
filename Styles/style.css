@@ -104,14 +104,14 @@ a:active{
   align-items:center;
 }
 .menu li {
-  height: 50px;
+  height: 60px;
   transition: background-position-x 0.9s linear;
   text-align: center;
   font-family: "Varela Round", sans-serif;
 }
 .menu li a {
-  font-size: 22px;
-  color: #777;
+  font-size: 38px;
+  color: #;
   text-decoration: none;
   transition: all 0.45s;
 }
