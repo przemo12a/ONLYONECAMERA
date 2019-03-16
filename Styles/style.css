@@ -3,3 +3,8 @@ body{
   padding: 0;
   background-color: #FFF6FC;
 }
+
+#frame_premium > #content_premium > ul > li{
+  list-style-image: url(../Images/Assety/kulka.png);
+
+}
