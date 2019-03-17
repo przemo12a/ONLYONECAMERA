@@ -117,12 +117,20 @@ nav>a>button {
 
 /* WATCHING SECTION */
 
+#art_1{
+  position: relative;
+  top: 100px;
+  left: 750px;
+  width: 400px;
+  height: 400px;
+}
+
 #header_watching{
   position: relative;
-  top: 300px;
+  bottom: 100px;
   font-size: 85px;
   font-weight: 100;
-  right: 500px;
+  left: 135px;
   color: #856084;
   text-shadow: 2px 2px 10px rgba(57, 57, 57, 0.4);
 }
@@ -136,10 +144,18 @@ nav>a>button {
   text-align: center;
 }
 
-#watching>img{
+#art_2{
   position: relative;
-  top: 100px;
+  bottom: 330px;
   left: 800px;
+  width: 600px;
+  height: 500px;
+}
+
+#art_3{
+  position: relative;
+  top: 200px;
+  right: 1000px;
   width: 600px;
   height: 500px;
 }
@@ -150,9 +166,9 @@ nav>a>button {
 
 /* RECORDING SECTION */
 
-#recording>img{
+#art_4{
   position: relative;
-  top: 350px;
+  top: 0px;
   left: 50px;
   width: 700px;
   height: 400px;
@@ -161,7 +177,7 @@ nav>a>button {
 
 #header_recording{
   position: relative;
-  bottom: 100px;
+  bottom: 450px;
   font-size: 85px;
   font-weight: 100;
   left: 800px;
@@ -171,14 +187,45 @@ nav>a>button {
 
 #text_recording{
   position: relative;
-  top: 100px;
+  bottom: 350px;
   color: #856084;
   font-size: 25px;
   left: 325px;
   text-align: center;
 }
 
-/* END OFE RECORDING SECTION */
+#art_5{
+  position: absolute;
+  top: 200px;
+  height: 525px;
+  width: 500px;
+
+}
+
+/* END OFF RECORDING SECTION */
+
+/*----------------------------------------------------------------------- */
+
+/* TRAILER SECTION */
+
+#header_trailer{
+  position: relative;
+  top: 160px;
+  color: #856084;
+  font-size: 85px;
+  font-weight: normal;
+}
+
+#trailer>img{
+  position: relative;
+  height: 650px;
+  width: 740px;
+  top: 200px;
+  left: 400px;
+
+}
+
+
 
 #frame_premium>#content_premium>ul>li {
   list-style-image: url(../Images/Assety/kulka.png);
