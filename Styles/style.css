@@ -145,6 +145,41 @@ nav>a>button {
 }
 
 /* END OF WATCHING SECTION */
+
+/* ----------------------------------------------------------- */
+
+/* RECORDING SECTION */
+
+#recording>img{
+  position: relative;
+  top: 350px;
+  left: 50px;
+  width: 700px;
+  height: 400px;
+
+}
+
+#header_recording{
+  position: relative;
+  bottom: 100px;
+  font-size: 85px;
+  font-weight: 100;
+  left: 800px;
+  color: #856084;
+  text-shadow: 2px 2px 10px rgba(57, 57, 57, 0.4);
+}
+
+#text_recording{
+  position: relative;
+  top: 100px;
+  color: #856084;
+  font-size: 25px;
+  left: 325px;
+  text-align: center;
+}
+
+/* END OFE RECORDING SECTION */
+
 #frame_premium>#content_premium>ul>li {
   list-style-image: url(../Images/Assety/kulka.png);
 }
