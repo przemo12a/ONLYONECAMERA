@@ -1,10 +1,150 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: #FFF6FC;
+  font-family: 'Varela Round', sans-serif;
+  /*width: 1920px; */
 }
 
-#frame_premium > #content_premium > ul > li{
-  list-style-image: url(../Images/Assety/kulka.png);
+/* WELCOME SECTION */
 
+nav>img {
+  position: absolute;
+  bottom: 500px;
+  right: 1200px;
+  z-index: -3;
+}
+
+#ooc {
+  height: 95px;
+  width: 95px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+nav>ul>li {
+  float: left;
+  display: inline-block;
+  margin: 25px 27px 0px 27px;
+  position: relative;
+  left: 100px;
+  font-size: 27px;
+}
+
+nav>ul>li>a:link {
+  text-decoration: none;
+  color: #856084;
+}
+
+nav>ul>li>a:visited {
+  text-decoration: none;
+  color: #856084;
+}
+
+nav>ul>li>a:hover {
+  text-decoration: none;
+  color: #856084;
+}
+
+nav>ul>li>a:active {
+  text-decoration: none;
+  color: #856084;
+}
+
+nav>a>button {
+  position: absolute;
+  height: 40px;
+  width: 210px;
+  top: 35px;
+  right: 50px;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  background-image: linear-gradient(45deg, #ffa8e5 0%, #ff69b2 100%);
+  box-shadow: 2px 2px 10px rgba(57, 57, 57, 0.4);
+  font-family: 'Varela Round'sans-serif ;
+  font-family : inherit;
+  font-size: 15px;
+  color: #FFF6FC;
+  text-shadow: 2px 2px 10px rgba(57, 57, 57, 0.4);
+  cursor: pointer;
+}
+
+#welcome>img {
+  height: 475px;
+  width: 600px;
+  position: relative;
+  top: 150px;
+  right: 720px;
+  float: left;
+}
+
+#welcome>p{
+  float:left;
+  position: relative;
+  color: #856084;
+  font-size: 42px;
+  text-align: center;
+  left:800px;
+  bottom: 200px;
+
+}
+
+#welcome>a>button {
+  position: relative;
+  height: 60px;
+  width: 350px;
+  top: 20px;
+  left: 300px;
+  border-radius: 35px;
+  border: none;
+  text-decoration: none;
+  background-image: linear-gradient(45deg, #ffa8e5 0%, #ff69b2 100%);
+  box-shadow: 2px 2px 10px rgba(57, 57, 57, 0.4);
+  font-family: 'Varela Round'sans-serif;
+  font-family : inherit;
+  font-size: 27px;
+  color: #FFF6FC;
+  text-shadow: 2px 2px 10px rgba(57, 57, 57, 0.4);
+  cursor: pointer;
+  clear: both;
+}
+
+/* END OF WELCOME SECTION */
+
+/* ------------------------------------------------------------ */
+
+/* WATCHING SECTION */
+
+#header_watching{
+  position: relative;
+  top: 300px;
+  font-size: 85px;
+  font-weight: 100;
+  right: 500px;
+  color: #856084;
+  text-shadow: 2px 2px 10px rgba(57, 57, 57, 0.4);
+}
+
+#text_watching{
+  position: absolute;
+  top: 1050px;
+  color: #856084;
+  font-size: 25px;
+  left: 150px;
+  text-align: center;
+}
+
+#watching>img{
+  position: relative;
+  top: 100px;
+  left: 800px;
+  width: 600px;
+  height: 500px;
+}
+
+/* END OF WATCHING SECTION */
+#frame_premium>#content_premium>ul>li {
+  list-style-image: url(../Images/Assety/kulka.png);
 }
