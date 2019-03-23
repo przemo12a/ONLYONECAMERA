@@ -210,23 +210,107 @@ nav>a>button {
 
 #header_trailer{
   position: relative;
-  top: 160px;
+  top: 0px;
   color: #856084;
   font-size: 85px;
   font-weight: normal;
 }
 
-#trailer>img{
+#trailer_img{
   position: relative;
   height: 650px;
   width: 740px;
-  top: 200px;
+  top: 100px;
   left: 400px;
+}
+
+#trailer_img2{
+  position: relative;
+  height: 600px;
+  width: 600px;
+  top: 0px;
+  right: 1100px;
+}
+
+/* END OFF TRAILER SECTION */
+
+/*----------------------------------------------------------------------- */
+
+/* PLANS SECTION */
+
+#tekst8{
+  position: relative;
+  top: 400px;
+  color: #856084;
+  font-size: 85px;
+  font-weight: normal;
+  left: 650px;
+}
+
+#plans_img1{
+  position: relative;
+  height: 700px;
+  width: 300px;
+  top: 400px;
+  right: 200px;
+}
+
+#content_free{
+  height: 100px;
+  width: 300px;
+  position: relative;
+  bottom: 200px;
+  left: 200px;
+  box-shadow: 7px 7px 7px rgba(53, 53, 53, 0.1);
 
 }
 
+#content_free>h1{
+  padding: 10px 125px 10px 125px;
+  background-color: white;
+  position: relative;
+  left: 0px;
+  text-align: center;
+  font-size: 50px;
+  bottom: 0px;
+  box-shadow: 7px 7px 7px rgba(53, 53, 53, 0.1);
+  height: 50px;
+  width: 150px;
+}
 
 
-#frame_premium>#content_premium>ul>li {
-  list-style-image: url(../Images/Assety/kulka.png);
+#content_free>ul{
+  background-color: white;
+  width: 360px;
+  height: 400px;
+  line-height: 60px;
+  font-size: 20px;
+  list-style-image: url(../Images/Assety/kulka1.png);
+  color: #856084;
+
+
+}
+
+#content_premium{
+  height: 100px;
+  width: 300px;
+  background-color: white;
+}
+
+#content_premium>h1{
+  padding: 10px 125px 10px 125px;
+  background-color: white;
+  position: relative;
+  left: 800px;
+  text-align: center !important;
+  font-size: 50px;
+  top: 0px;
+  box-shadow: 7px 7px 7px rgba(53, 53, 53, 0.1);
+  height: 50px;
+  width: 150px;
+}
+
+
+#content_premium>ul>li{
+
 }
