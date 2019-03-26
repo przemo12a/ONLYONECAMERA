@@ -255,16 +255,6 @@ nav>a>button {
   right: 200px;
 }
 
-#content_free{
-  height: 100px;
-  width: 300px;
-  position: relative;
-  bottom: 200px;
-  left: 200px;
-
-
-
-}
 
 #content_free>h1{
   padding: 10px 125px 10px 125px;
@@ -275,8 +265,8 @@ nav>a>button {
   box-shadow: 7px 7px 7px rgba(53, 53, 53, 0.1);
   height: 50px;
   width: 125px;
-  top: 125px;
-  left: 10px;
+  bottom: 275px;
+  left: 310px;
 
 }
 
@@ -285,21 +275,34 @@ nav>a>button {
   background-color: white;
   width: 360px;
   height: 400px;
-  line-height: 60px;
+
   font-size: 20px;
   list-style-image: url(../Images/Assety/kulka1.png);
   color: #856084;
   box-shadow: 7px 7px 7px rgba(53, 53, 53, 0.1);
   padding-top: 100px;
   padding-bottom: 30px;
+  position: relative;
+  z-index: -1;
+  bottom: 400px;
+  left: 300px;
 }
+
+#content_free>ul>li{
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+
+
 
 #join1{
   position: relative;
   height: 45px;
-  width: 270px;
-  left: 20px;
-  border-radius: 20px;
+  width: 260px;
+  left: 360px;
+  bottom: 485px;
+  border-radius: 50px;
   border: none;
   text-decoration: none;
   background-image: linear-gradient(45deg, #ffa8e5 0%, #ff69b2 100%);
@@ -312,11 +315,7 @@ nav>a>button {
   cursor: pointer;
 }
 
-#content_premium{
-  height: 100px;
-  width: 300px;
-  background-color: white;
-}
+
 
 #content_premium>h1{
   padding: 10px 125px 10px 125px;
@@ -332,6 +331,19 @@ nav>a>button {
 }
 
 
-#content_premium>ul>li{
-
+#content_premium>ul{
+  background-color: white;
+  width: 360px;
+  height: 400px;
+  line-height: 60px;
+  font-size: 20px;
+  list-style-image: url(../Images/Assety/kulka1.png);
+  color: #856084;
+  box-shadow: 7px 7px 7px rgba(53, 53, 53, 0.1);
+  padding-top: 100px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: -1;
+  bottom: 500px;
+  left: 900px;
 }
