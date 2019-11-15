@@ -9,7 +9,7 @@ body {
 /* VIEWVPORTS */
 
   /*
-      320px - Mobile
+      360px - Mobile
       768px - Tablet
       1024px - Laptop
       1440px - Laptop L
@@ -31,12 +31,18 @@ body {
 
 /* COLORS */
 
-/* SIZE: 320px */
+/* SIZE: 360px */
 
 header {
   background: #F0A6CA;
   height: 87px;
   position: relative;
+}
+
+@media (min-width: 1024px) {
+  header {
+    background: transparent;
+  }
 }
 
 header::after {
@@ -52,6 +58,13 @@ header::after {
   z-index: -1;
 }
 
+@media (min-width: 1024px) {
+  #nav_img {
+    left: -328.24px;
+    top: -327.66px;
+  }
+}
+
 #header-icon {
   float: left;
   padding: 8px 0 0 14px;
@@ -64,6 +77,12 @@ header::after {
   line-height: 87px;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 1024px) {
+  #navHamburgerMenu {
+    display: none;
+  }
 }
 
 .lines {
@@ -83,6 +102,23 @@ header::after {
   background: #F0A6CA;
   height: 100vh;
   width: 100vw;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  #header-icon {
+    display: inline-block;
+  }
+  .header-nav {
+    display: inline-block;
+    width: auto;
+    position: static;
+    top: 0;
+    left: 0;
+    height: auto;
+    line-height: 87px;
+    background: transparent;
+  }
 }
 
 #navUl {
@@ -91,10 +127,24 @@ header::after {
   padding: 0;
 }
 
+@media (min-width: 1024px) {
+  #navUl {
+    margin: 0 30px;
+    display: inline-block;
+  }
+}
+
 #navUl li {
   display: block;
   margin: 45px 0;
   text-shadow: rgba(0, 0, 0, 0.160) 0 3px 6px;
+}
+
+@media (min-width: 1024px) {
+  #navUl li {
+    display: inline-block;
+    margin: 0 28px 0 0;
+  }
 }
 
 .btn {
@@ -108,11 +158,37 @@ header::after {
   text-shadow: rgba(0, 0, 0, 0.160) 0 3px 6px;
 }
 
+@media (min-width: 1024px) {
+  .btn {
+    font-size: 25px;
+    color: #856084;
+    text-shadow: none;
+  }
+}
+
 .login {
   position: absolute;
   bottom: 87px;
   left: 0;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .login {
+    position: static;
+    bottom: auto;
+    left: auto;
+    display: block;
+    float: right;
+    width: auto;
+    margin: 8px 0 0 60px;
+  }
+
+  .header-nav:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
 
 .btn2 {
@@ -127,10 +203,18 @@ header::after {
   text-shadow: rgba(0, 0, 0, 0.160) 0 3px 6px;
 }
 
+@media (min-width: 1024px) {
+  .btn2 {
+    margin: 0;
+    width: 200px;
+    height: 70px;
+  }
+}
+
 .btn2 a {
   text-decoration: none;
   color: #fff;
-  font-size: 23px;
+  font-size: 20px;
   font-family: 'Varela Round', sans-serif;
   text-align: center;
   margin: -35px 0 0;
@@ -145,6 +229,26 @@ header::after {
   max-width: 100%;
 }
 
+@media (min-width: 768px) {
+  #welcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 54px 0;
+  }
+
+  #welcomeImg {
+    max-width: calc(50% - 54px);
+  }
+}
+
+@media (min-width: 1024px) {
+  #welcome {
+    padding: 48px 80px 0;
+  }
+}
+
 #welcomeP {
   color: #856084;
   text-align: center;
@@ -152,6 +256,22 @@ header::after {
   line-height: 25px;
   margin: 38px 0 34px;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  #welcomeP {
+    margin: 38px 0 2px;
+    font-size: 25px;
+    padding: 45px 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  #welcomeP {
+    font-size: 32px;
+    padding: 35px 0 0;
+    line-height: normal;
+  }
 }
 
 #createAccount {
