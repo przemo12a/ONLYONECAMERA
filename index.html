@@ -12,8 +12,8 @@
 	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-	<link rel="stylesheet" href="Styles/style.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" href="Styles/style.css" type="text/css" />
 
 </head>
 
@@ -21,51 +21,48 @@
 
 	<!--Beggining of welcome section -->
 
-	<nav>
-		<div class="navBar">
-
-		</div>
-
-		<div id="navHamburgerMenu">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div>
-
+	<header>
 		<img id="nav_img" src="Images/Assety/Group_22.png" alt="Group_22.png">
 
-		<a href="index.html"><img id="ooc" src="Images/Assety/icona.png" alt="ooc" /></a>
+		<a id="header-icon" href="index.html"><img id="ooc" src="Images/Assety/icona-1.png" alt="ooc" /></a>
 
-		<!-- 	Navigation menu  -->
-		<ul id="navUl">
-			<li class="btn1"><a href="#watching" class="btn">OGLĄDANIE</a></li>
-			<li><a href="#recording" class="btn">TWORZENIE</a></li>
-			<li><a href="#trailer" class="btn">TRAILER</a></li>
-			<li><a href="#plans" class="btn">PLANY</a></li>
-		</ul>
+		<div id="navHamburgerMenu">
+			<div class="lines"></div>
+		</div>
 
-		<button class="btn2">
-			<a class="btn2" href="logowanie.html">ZALOGUJ SIĘ</a>
-		</button>
+		<nav class="header-nav" style="display: none;">
+			<!-- 	Navigation menu  -->
+			<ul id="navUl">
+				<li class="btn1"><a href="#watching" class="btn">OGLĄDANIE</a></li>
+				<li><a href="#recording" class="btn">TWORZENIE</a></li>
+				<li><a href="#trailer" class="btn">TRAILER</a></li>
+				<li><a href="#plans" class="btn">PLANY</a></li>
+			</ul>
 
-	</nav>
+			<div class="login">
+				<button class="btn2">
+					<a href="logowanie.html">ZALOGUJ SIĘ</a>
+				</button>
+			</div>
+		</nav>
+
+	</header>
 
 	<div id="welcome">
 		<img id="welcomeImg" src="Images/Assety/powitalna.png" alt="powitalna.png">
 
 		<p id="welcomeP">DOM DLA UTALENTOWANYCH <br> TWÓRCÓW NIEZALEŻNYCH <br> ORAZ ICH FILMÓW. </p>
 
-		<button>
+		<button id="createAccount">
 			<a href="logowanie.html"> ZAŁÓŻ KONTO </a>
 		</button>
-
 	</div>
 
 	<!--End of welcome section -->
 
 	<!-- Watching section -->
 
-	<div id="watching">
+	<!-- <div id="watching">
 
 		<img id="art_1" src="Images/Assety/Group_24.png" alt="Group_24.png">
 
@@ -77,12 +74,12 @@
 
 		<img id="art_3" src="Images/Assety/Group_26.png" alt="Group_26.png">
 
-	</div>
+	</div> -->
 	<!-- End of watching section -->
 
 	<!-- Recording section -->
 
-	<div id="recording">
+	<!-- <div id="recording">
 
 		<img id="art_4" src="Images/Assety/recording.png" alt="recording.png">
 
@@ -93,12 +90,12 @@
 
 			<img id="art_5" src="Images/Assety/Group_27.png" alt="Group_27.png">
 
-	</div>
+	</div> -->
 	<!-- End of recording section -->
 
 	<!-- Trailer section -->
 
-	<div id="trailer">
+	<!-- <div id="trailer">
 
 		<h1 id="header_trailer">TRAILER</h1>
 
@@ -106,12 +103,12 @@
 
 		<img id="trailer_img2" src="Images/Assety/Group_28.png" alt="Group_28.png">
 
-	</div>
+	</div> -->
 	<!-- End of trailer section -->
 
 	<!-- Plans section -->
 
-	<div id="plans">
+	<!-- <div id="plans">
 
 		<h1 id="tekst8">PLANY</h1>
 
@@ -156,12 +153,12 @@
 
 		<img src="Images/Assety/Path_643.png" alt="Path_643.png">
 
-	</div>
+	</div> -->
 	<!--	End of plans section-->
 
 	<!-- Footer section -->
 
-	<div id="stopka">
+	<!-- <div id="stopka">
 
 		<a href="https://www.facebook.com/">
 			<img src="Images/Assety/facebook.png" alt="facebook.png">
@@ -199,10 +196,31 @@
 
 		<p> Only One Camera Polska © </p>
 
-	</div>
+	</div> -->
 
 	<!--	End of footer section-->
 
+	<script>
+		var hamburgerMenu = document.querySelector('#navHamburgerMenu');
+		var headerNav = document.getElementsByClassName('header-nav')[0];
+		var icon = document.getElementsByClassName('lines')[0];
+		var body = document.querySelector('body');
+
+		hamburgerMenu.onclick = function() {
+			if (headerNav.style.display === 'none') {
+				headerNav.style.display = 'block';
+				icon.style.background = "url('../Images/Assety/Group\ 15.png') no-repeat";
+				body.style.height = '100vh';
+				body.style.overflow = "hidden";
+			}
+			else {
+				headerNav.style.display = 'none';
+				icon.style.background = "url('../Images/Assety/Group\ 14.png') no-repeat";
+				body.style.height = 'auto';
+				body.style.overflow = "visible";
+			}
+		}
+	</script>
 </body>
 
 </html>
