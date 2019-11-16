@@ -24,7 +24,7 @@
 	<header>
 		<img id="nav_img" src="Images/Assety/Group_22.png" alt="Group_22.png">
 
-		<a id="header-icon" href="index.html"><img id="ooc" src="Images/Assety/icona-1.png" alt="ooc" /></a>
+		<a id="header-icon" href="index.html"><img id="ooc" src="Images/Assety/icona.png" alt="ooc" /></a>
 
 		<div id="navHamburgerMenu">
 			<div class="lines"></div>
@@ -34,7 +34,7 @@
 			<!-- 	Navigation menu  -->
 			<ul id="navUl">
 				<li class="btn1"><a href="#watching" class="btn">OGLĄDANIE</a></li>
-				<li><a href="#recording" class="btn">TWORZENIE</a></li>
+				<li><a href="#recording" class="btn">NAGRYWANIE</a></li>
 				<li><a href="#trailer" class="btn">TRAILER</a></li>
 				<li><a href="#plans" class="btn">PLANY</a></li>
 			</ul>
@@ -48,6 +48,7 @@
 
 	</header>
 
+	<div class="container">
 	<div id="welcome">
 		<img id="welcomeImg" src="Images/Assety/powitalna.png" alt="powitalna.png">
 
@@ -201,25 +202,29 @@
 	</div> -->
 
 	<!--	End of footer section-->
+	</div>
 
 	<script>
 		var hamburgerMenu = document.querySelector('#navHamburgerMenu');
 		var headerNav = document.getElementsByClassName('header-nav')[0];
 		var icon = document.getElementsByClassName('lines')[0];
 		var body = document.querySelector('body');
+		var container = document.querySelector('.container');
 
 		hamburgerMenu.onclick = function() {
-			if (headerNav.style.display === 'none') {
+			if (getComputedStyle(headerNav).display === 'none') {
 				headerNav.style.display = 'block';
 				icon.style.background = "url('../Images/Assety/Group\ 15.png') no-repeat";
 				body.style.height = '100vh';
-				body.style.overflow = "hidden";
+				body.style.minHeight = 'calc(' + getComputedStyle(headerNav).minHeight + ' + 87px)';
+				container.style.display = 'none';
 			}
 			else {
 				headerNav.style.display = 'none';
 				icon.style.background = "url('../Images/Assety/Group\ 14.png') no-repeat";
 				body.style.height = 'auto';
 				body.style.overflow = "visible";
+				container.style.display = 'block';
 			}
 		}
 	</script>
