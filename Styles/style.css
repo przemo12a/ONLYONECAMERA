@@ -1,0 +1,423 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF6FC;
+  font-family: 'Varela Round', sans-serif;
+  background-color: #FFF6FC;
+  height: auto;
+  overflow: visible;
+}
+
+/* VIEWPORTS */
+
+  /*
+      <= 360px - Mobile
+      > 360px - Mobile Landscape
+      >= 768px - Tablet
+      >= 1024px - Laptop
+      >= 1440px - Laptop L
+      >= 1920px - Desktop
+  */
+
+/* VIEWPORTS */
+
+/* COLORS */
+
+    /*
+      #856084
+      #D7C0D0
+      #011638
+      #2E294E
+      #F0A6CA
+      #FFF6FC
+    */
+
+/* COLORS */
+
+header {
+  background: #F0A6CA;
+  height: 87px;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  header {
+    background: transparent;
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    height: 96px;
+  }
+}
+
+@media (min-width: 1920px) {
+  header {
+    height: 179px;
+  }
+}
+
+#nav_img {
+  position: absolute;
+  top: -363.66px;
+  left: -539.24px;
+  z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  #nav_img {
+    left: -328.24px;
+    top: -327.66px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #nav_img {
+    left: -200px;
+    top: -240px;
+  } 
+}
+
+#header-icon {
+  padding: 8px 0 0 14px;
+  float: left;
+}
+
+@media (min-width: 1920px) {
+  #header-icon {
+    padding: 40px 0 0 43px;
+  }
+}
+
+#ooc {
+  max-width: 71px;
+  max-height: 71px;
+}
+
+@media (min-width: 1440px) {
+  #ooc {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #ooc {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+#navHamburgerMenu {
+  float: right;
+  padding: 0 14px 0 0;
+  height: 87px;
+  line-height: 87px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  #navHamburgerMenu {
+    display: none;
+  }
+}
+
+.lines {
+  background: url('../Images/Assety/Group\ 14.png') no-repeat;
+  width: 66px;
+  height: 58px;
+}
+
+.lines:hover {
+  cursor: pointer;
+}
+
+.header-nav {
+  position: absolute;
+  top: 87px;
+  left: 0;
+  background: #F0A6CA;
+  height: auto;
+  min-height: 530px;
+  width: 100vw;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header-nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    min-height: auto;
+    position: static;
+    top: 0;
+    left: 0;
+    height: auto;
+    line-height: 87px;
+    background: transparent;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-nav {
+    line-height: 96px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header-nav {
+    line-height: 140px;
+  } 
+}
+
+#navUl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  #navUl {
+    margin: 0 30px;
+    display: inline-block;
+  }
+}
+
+#navUl li {
+  display: block;
+  margin: 45px 0;
+  text-shadow: rgba(0, 0, 0, 0.160) 0 3px 6px;
+}
+
+@media (min-width: 1024px) {
+  #navUl li {
+    display: inline-block;
+    margin: 0 28px 0 0;
+  }
+}
+
+.btn {
+  font-family: 'Varela Round', sans-serif;
+  color: #FFF6FC;
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 48px;
+  display: block;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.160) 0 3px 6px;
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    font-size: 25px;
+    color: #856084;
+    text-shadow: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .btn {
+    font-size: 40px;
+    line-height: normal;
+  } 
+}
+
+@media (min-width: 1440px) {
+  .btn {
+    font-size: 28px;
+  }
+}
+
+.login {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .login {
+    position: static;
+    bottom: auto;
+    left: auto;
+    display: block;
+    width: auto;
+    margin: 8px 0 0 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .login {
+    margin: 13px 13px 0 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .login {
+    margin: 34px 10px 0 0;
+  }
+}
+
+.btn2 {
+  background: url('../Images/Assety/Rectangle\ 76.png') no-repeat;
+  background-size: 100% 100%;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 310px;
+  height: 89px;
+  text-shadow: rgba(0, 0, 0, 0.160) 0 3px 6px;
+}
+
+@media (min-width: 1024px) {
+  .btn2 {
+    margin: 0;
+    width: 200px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .btn2 {
+    width: 359.53px;
+    height: 78.38px;
+  }
+}
+
+.btn2 a {
+  text-decoration: none;
+  color: #FFF6FC;
+  font-size: 20px;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  margin: -35px 0 0;
+  display: inline-block;
+}
+
+@media (min-width: 1920px) {
+  .btn2 a {
+    font-size: 25px;
+    margin: -25px 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: block !important;
+  }
+}
+
+#welcome {
+  padding: 48px 18px 0;
+  clear: both;
+}
+
+#welcomeImg {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  #welcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 54px 0;
+  }
+
+  #welcomeImg {
+    max-width: calc(50% - 54px);
+  }
+}
+
+@media (min-width: 1024px) {
+  #welcome {
+    padding: 48px 80px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  #welcome {
+    padding: 48px 105px 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  #welcome {
+    padding: 0 40px 0 140px;
+  }
+}
+
+#welcomeP {
+  color: #856084;
+  text-align: center;
+  font-size: 21px;
+  line-height: 25px;
+  margin: 38px 0 34px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  #welcomeP {
+    margin: 38px 0 2px;
+    font-size: 25px;
+    padding: 45px 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  #welcomeP {
+    font-size: 32px;
+    padding: 35px 0 0;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 1440px) {
+  #welcomeP {
+    font-size: 38px;
+    margin: 40px 0 15px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #welcomeP {
+    font-size: 60px;
+  }
+}
+
+#createAccount {
+  background: url('../Images/Assety/Rectangle\ 11.png') no-repeat;
+  background-size: 100% 100%;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 310px;
+  height: 89px;
+}
+
+#createAccount a {
+  text-decoration: none;
+  color: #FFF6FC;
+  font-size: 23px;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  margin: -35px 0 0;
+  display: inline-block;
+}
+
+@media (min-width: 1920px) {
+  #createAccount {
+    width: 512.92px;
+    height: 97.53px;
+  }
+  #createAccount a {
+    font-size: 35px;
+    margin: -19px;
+  }
+}
